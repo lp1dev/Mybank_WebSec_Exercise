@@ -2,7 +2,7 @@ FROM alpine:latest
 
 RUN apk update && apk add python3 py3-pip
 
-RUN pip3 install flask pyjwt pysqlite3
+RUN pip3 install --break-system-packages flask pyjwt pysqlite3
 
 RUN mkdir /app
 
